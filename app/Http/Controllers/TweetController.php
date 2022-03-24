@@ -14,6 +14,7 @@ class TweetController extends Controller
             "tweet_name"=>$request->tweet_name,
             "tweet"=>$request->tweet,
             "nice_count"=>0,
+            "comment_count"=>0,
         ]);
         return response()->json(['message' => 'Successfully newtweet create']);
     }

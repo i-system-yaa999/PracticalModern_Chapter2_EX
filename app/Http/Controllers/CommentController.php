@@ -20,6 +20,11 @@ class CommentController extends Controller
             "comment_name" => $request->comment_name,
             "comment" => $request->comment,
         ]);
+        Tweet::find($request->tweets_id)->increment('comment_count');
         return response()->json(['message' => 'Successfully create comment']);
+    }
+    public function getcommentcount(Request $request)
+    {
+        return Tweet::find($request->id)->comment_count;
     }
 }

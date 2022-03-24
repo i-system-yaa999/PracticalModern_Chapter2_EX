@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('tweet_name');
             $table->string('tweet');
             $table->integer('nice_count');
+            $table->integer('comment_count');
             $table->timestamp('created_at')->useCurrent()->Nullable();
             $table->timestamp('updated_at')->useCurrent()->Nullable();
         });

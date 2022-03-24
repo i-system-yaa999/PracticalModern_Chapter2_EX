@@ -13,5 +13,6 @@ class Tweet extends Model
         'tweet_name',
         'tweet',
         'nice_count',
+        'comment_count',
     ];
 }

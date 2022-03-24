@@ -39,4 +39,5 @@ Route::post('countup',[LikeController::class,'countup']);
 Route::post('getcount',[LikeController::class,'getcount']);
 
 Route::post('getcomment',[CommentController::class,'getcomment']);
+Route::post('getcommentcount',[CommentController::class, 'getcommentcount']);
 Route::post('addcomment',[CommentController::class,'addcomment']);
